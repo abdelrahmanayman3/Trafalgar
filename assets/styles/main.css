@@ -1,12 +1,13 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 :root {
-  --main-color: #458FF6;
+  --black: rgba(0, 0, 0, 0.259);
+  --main-color: #458ff6;
   --title-color: #000000;
-  --text-color: #7D7987;
+  --text-color: #7d7987;
   --alt-text-color: #ffffff;
   --h1-size: 48px;
   --h2-size: 36px;
@@ -14,8 +15,8 @@
   --h4-size: 20px;
   --text-size: 18px;
 }
-html{
-    font-family: Arial, Helvetica, sans-serif;
+html {
+  font-family: Arial, Helvetica, sans-serif;
 }
 .container {
   padding: 0 15px;
@@ -35,4 +36,83 @@ html{
   .container {
     width: 1170px;
   }
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+header {
+  position: sticky;
+  background-color: var(--alt-text-color);
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+header .container .logo .t {
+  background-color: var(--main-color);
+  color: var(--alt-text-color);
+  margin-right: 5px;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+header .container .logo a {
+  color: rgb(21, 42, 81);
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+header .container nav ul .home-page {
+  color: var(--title-color);
+}
+@media (max-width: 991px) {
+  header nav img {
+    cursor: pointer;
+  }
+  header nav input {
+    appearance: none;
+  }
+  header nav input:checked + ul {
+    display: block;
+  }
+  header nav ul {
+    position: absolute;
+    display: none;
+    top: 60px;
+    right: 0;
+    background-color: var(--white);
+  }
+  header nav ul li {
+    border-bottom: 1px solid rgba(9, 163, 214, 0.811);
+    padding: 15px;
+  }
+  header nav ul li a {
+    color: var(--black);
+  }
+}
+@media (min-width: 992px) {
+  header nav input,
+  header nav label {
+    display: none;
+  }
+  header ul {
+    display: flex;
+    gap: 30px;
+  }
+}
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero .container .col {
+}
+.hero .container .col h1 {
+  font-size: var(--h1-size);
+}
+.hero .container .col img {
+  width: 100%;
 }
