@@ -70,12 +70,16 @@ header .container .logo a {
 }
 header nav ul li a:hover {
   color: var(--title-color);
+  padding-left: 10px;
+  transition: all 1s;
 }
 header .container nav ul .home-page {
   color: var(--title-color);
 }
 header .container nav ul .home-page:hover {
   color: var(--text-color);
+  padding-right: 10px;
+  transition: all 1s;
 }
 header nav img {
   cursor: pointer;
@@ -138,6 +142,7 @@ header nav input {
   border: 2px solid var(--main-color);
   color: var(--main-color);
   font-weight: bold;
+  transition: all 1s;
 }
 .hero .container .col img {
   width: 100%;
@@ -164,6 +169,7 @@ header nav input {
 .services {
   background-image: url(../images/blob-1.webp);
   background-repeat: no-repeat;
+  z-index: -10;
 }
 .services .section-title::after {
   left: calc(50% - 25px);
@@ -185,7 +191,6 @@ header nav input {
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .list-cards .card {
   width: 270px;
   height: 300px;
