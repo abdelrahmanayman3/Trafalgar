@@ -17,7 +17,7 @@
 }
 html {
   font-family: Arial, Helvetica, sans-serif;
-  scroll-behavior: smooths;
+  scroll-behavior: smooth;
 }
 .container {
   padding: 0 15px;
@@ -74,6 +74,9 @@ header nav ul li a:hover {
 header .container nav ul .home-page {
   color: var(--title-color);
 }
+header .container nav ul .home-page:hover {
+  color: var(--text-color);
+}
 header nav img {
   cursor: pointer;
 }
@@ -128,6 +131,13 @@ header nav input {
   color: var(--alt-text-color);
   border-radius: 20px;
   padding: 10px;
+  font-weight: bold;
+}
+.hero .container .info .btn-section:hover {
+  background-color: var(--white);
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+  font-weight: bold;
 }
 .hero .container .col img {
   width: 100%;
@@ -168,8 +178,8 @@ header nav input {
 .list-cards {
   margin-top: 40px;
   gap: 30px;
-} 
-.d-flex{
+}
+.d-flex {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -184,9 +194,9 @@ header nav input {
   border-radius: 20px;
   padding: 20px;
 }
-.list-cards .card img{
+.list-cards .card img {
   padding: 20px 0;
 }
-.list-cards .card .title-descrption{
+.list-cards .card .title-descrption {
   text-align: start;
 }
